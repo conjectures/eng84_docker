@@ -34,7 +34,7 @@ To create the account, follow the steps [here](https://hub.docker.com/).
 
 After creating the account, the images that are uploaded can be found on your repository page
 
-![Docker Hub Repo page](https://hub.docker.com/)
+![Docker Hub Repo page](dockerhub_panel.png)
 
 ### Connecting with CLI 
 After creating an account, we can connect with it locally, using the docker cli.
