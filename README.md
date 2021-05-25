@@ -13,6 +13,8 @@
   - [Execute commands](#execute-commands)
   - [Copying files between host and container](#copying-files-between-host-and-container)
   - [Creating image from a container](#creating-image-from-a-container)
+- [Custom Images](#custom-images)
+- [Multi Stage Builds](#multi-stage-builds)
 
 
 ## Install
@@ -144,4 +146,15 @@ In our example, we have created an image from the custom nginx container, with t
 ![docker custom image shown in list](docker_custom_image_ls.png)
 
 
+## Custom Images
+The creation of docker images can be automated with the use of a **Dockerfile**.
+Dockerfiles are usually named `Dockerfile`
 
+...
+
+## Multi Stage Builds
+We can create multi stage builds for dockerfiles so that the overall size of the container is reduced.
+This is achieved by using a large container to perform the necessary builds for our application, then moving the build binaries to a smaller container that doesn't even include package managers.
+
+
+...
